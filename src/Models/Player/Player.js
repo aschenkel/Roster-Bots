@@ -2,15 +2,12 @@ import {maxScoreAllowed,minScoreAllowed} from '../../config/rules'
 const uuidv4 = require('uuid/v4');
 
 export const newPlayer = (score,nameCreator = uuidv4) => {
-  if(scoreIsValid(score)){ 
+  if(isScoreValid(score)){ 
     var halfScore = score/2
-    var speed = Math.round(halfScore)
-    var strenght = Math.floor(halfScore)
-    var name = nameCreator();
     return {
-      name,
-      speed,
-      strenght,
+      name:nameCreator(),
+      speed: Math.round(halfScore),
+      strenght: Math.floor(halfScore),
       score
     }
   }
@@ -19,7 +16,7 @@ export const newPlayer = (score,nameCreator = uuidv4) => {
   }
 }
 
-const scoreIsValid = (score) => {
+const isScoreValid = (score) => {
     return score > minScoreAllowed && score <= maxScoreAllowed ? true : false
 }
 

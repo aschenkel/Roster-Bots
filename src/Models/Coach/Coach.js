@@ -1,7 +1,9 @@
+import {numberOfStarters, numberOfPlayersPerTeam} from '../../config/rules'
+
 export const pickLineUps = roster =>  {
     var orderedRosterBySpeed = roster.sort(compare);
-    var starters = orderedRosterBySpeed.slice(0, 10);
-    var subs = orderedRosterBySpeed.slice(10, 15);
+    var starters = orderedRosterBySpeed.slice(0, numberOfStarters);
+    var subs = orderedRosterBySpeed.slice(numberOfStarters, numberOfPlayersPerTeam);
     return {starters,subs}
 }
 
