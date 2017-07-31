@@ -11,7 +11,7 @@ it('should create a new roster correctly (each player should have different name
     var players = newRoster()
     var validRoster = true;
     var i = 0;
-    while (i < players.length) {
+    while (validRoster && i < players.length) {
         var playerA = players[i];
         var j = i + 1
         while (validRoster && j < players.length) {

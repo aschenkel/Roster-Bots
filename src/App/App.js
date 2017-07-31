@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import logo from '../assets/logo.svg';
 import './App.css';
-import {newRoster} from '../Models/Roster/Roster'
+import Owner from '../Components/Owner/Owner'
+import Roster from '../Components/Roster/Roster'
 
 class App extends Component {
   constructor(){
     super()
-    newRoster()
   }
   render() {
     return (
       <div className="App">
-        <h1>Hey</h1>
+        <Owner/>
+        <Roster/>
       </div>
     );
   }

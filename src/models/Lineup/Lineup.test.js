@@ -1,10 +1,10 @@
-import {pickLineUps} from './Coach'
+import {pickLineUp} from './Lineup'
 import {numberOfStarters, numberOfPlayersPerTeam,maxScoreAllowed} from '../../config/rules'
 import {createMockPlayer} from '../Player/Player.test'
 
 it('should pick starters correctly', () => {
     var mockRoster = createMockRoster()
-    var {starters} = pickLineUps(mockRoster)
+    var {starters} = pickLineUp(mockRoster)
     var expectedStarters= mockRoster.slice(0, numberOfStarters);
     expect(expectedStarters).toEqual(starters)
 })

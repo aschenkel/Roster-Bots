@@ -16,8 +16,8 @@ export const newPlayer = (score,nameCreator = uuidv4) => {
   }
 }
 
-const isScoreValid = (score) => {
-    return score > minScoreAllowed && score <= maxScoreAllowed ? true : false
+const isScoreValid = score => {
+    return score >= minScoreAllowed && score <= maxScoreAllowed ? true : false
 }
 
 export const errorMessage = "Error, score not allowed"
