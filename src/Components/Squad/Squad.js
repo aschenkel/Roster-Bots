@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PlayerCard from '../PlayerCard/PlayerCard'
 import './Squad.css';
 
 const Squad = (props) => {
-    console.log(props)
     return (
-        //Props = starter = bool.. players = array
-        //check if starter
-        //map over players -> element -> PlayerCard
       <div className="Squad">
-        {props.players.map(player =>{
-               <p> player.name</p>
-            })}
+        <h1>{props.starter ? "STARTERS" : "SUBS"} </h1>
+          <div className="Squad-Content">
+            {
+              props.players.map(player =>{
+                return <PlayerCard player={player}/>
+              })
+            }
+          </div>
       </div>
     );
 }

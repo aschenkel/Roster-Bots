@@ -1,0 +1,11 @@
+.Roster {
+  background-color:darkgray;
+  flex-basis:80%;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .Roster{
+          flex-basis:100%;
+    }
+}

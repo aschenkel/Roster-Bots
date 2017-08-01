@@ -10,7 +10,7 @@ class Lineup extends Component {
   }
   render() {
     return (
-      <div className="Lineup">
+      <div>
         <Squad starter players={this.state.starters}/>
         <Squad players={this.state.subs}/>
       </div>

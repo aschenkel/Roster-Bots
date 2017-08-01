@@ -1,0 +1,10 @@
+.Owner {
+  background-color: lightgray;
+  flex-basis:20%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Owner{
+        display: none;
+    }
+}

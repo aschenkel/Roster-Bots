@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './PlayerCard.css';
 
 const PlayerCard = (props) => {
-  render() {
     return (
-        //Props = starter = bool.. players = array
-        //check if starter
-        //map over players
-      <div className="Card">
-        
+      <div className="card">
+        <div className="content">
+          <p>name {props.player.name}</p>
+          <p>speed {props.player.speed}</p>
+          <p>strenght {props.player.strenght}</p>
+        </div>
       </div>
     );
-  }
 }
 
 export default PlayerCard;
