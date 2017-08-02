@@ -4,10 +4,14 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import  PlayerCard  from '../src/Components/PlayerCard/PlayerCard';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+var player = {
+  name: '91098cf2-e6ab-4d0b-8af9-6bcb4f0a9175',
+  speed: 44,
+  strenght: 45,
+  score: 99
+}
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+storiesOf('PlayerCard', module)
+  .add('Regular', () => <PlayerCard player={player}/>)

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import PlayerCard from '../PlayerCard/PlayerCard'
 import './Squad.css';
 
@@ -16,5 +16,10 @@ const Squad = (props) => {
       </div>
     );
 }
+
+Squad.propTypes = {
+  players: PropTypes.array.isRequired
+};
+
 
 export default Squad;

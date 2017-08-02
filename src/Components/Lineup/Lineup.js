@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes} from 'react';
 import './Lineup.css';
 import Squad from '../Squad/Squad'
 import {pickLineUp} from '../../models/Lineup/Lineup'
@@ -17,5 +17,9 @@ class Lineup extends Component {
     );
   }
 }
+
+Lineup.propTypes = {
+  roster: PropTypes.array.isRequired
+};
 
 export default Lineup;
