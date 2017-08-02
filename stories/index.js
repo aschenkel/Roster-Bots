@@ -7,7 +7,8 @@ import { linkTo } from '@storybook/addon-links';
 import  PlayerCard  from '../src/Components/PlayerCard/PlayerCard';
 import  Lineup  from '../src/Components/Lineup/Lineup';
 import  Squad  from '../src/Components/Squad/Squad';
-import {createMockRoster} from '../src/models/Lineup/Lineup.test'
+import  Owner  from '../src/Components/Owner/Owner';
+
 var player = {
   name: '91098cf2-e6ab-4d0b-8af9-6bcb4f0a9175',
   speed: 44,
@@ -28,5 +29,3 @@ storiesOf('Squad', module)
 
 storiesOf('Lineup', module)
   .add('Regular', () => <Lineup roster={mockRoster}/>)
-
-//ADD OWNER STORY
