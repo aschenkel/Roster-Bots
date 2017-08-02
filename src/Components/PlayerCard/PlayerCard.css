@@ -7,6 +7,17 @@
   width: 90%;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
   display: inline-block;
+  -ms-transform: translateZ(0);
+  -webkit-transform:  translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;  
+  -webkit-backface-visibility: hidden; 
+}
+
+.card:hover{
+  transform: scale3d(1.1,1.1,1.1);
+  -ms-transform: scale3d(1.1,1.1,1.1);
+  -webkit-transform: scale3d(1.1,1.1,1.1);
 }
 .badge{
     background-color: salmon;
