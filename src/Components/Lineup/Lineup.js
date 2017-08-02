@@ -1,5 +1,4 @@
 import React, { Component, PropTypes} from 'react';
-import './Lineup.css';
 import Squad from '../Squad/Squad'
 import {pickLineUp} from '../../models/Lineup/Lineup'
 
