@@ -10,7 +10,7 @@ it('should pick starters correctly', () => {
 })
 
 
-const createMockRoster = () =>{
+export const createMockRoster = () =>{
     var mockPlayers = []
     for (var i = 0; i < numberOfPlayersPerTeam; i++) {
       var properScore = maxScoreAllowed - i;
