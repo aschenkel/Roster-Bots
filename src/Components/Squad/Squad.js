@@ -5,7 +5,7 @@ import './Squad.css';
 
 const Squad = (props) => {
     return (
-      <div className="Squad">
+      <div>
         <h1>{props.starter ? "STARTERS" : "SUBS"} </h1>
           <div className="Squad-Content">
             {

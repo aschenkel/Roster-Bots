@@ -18,9 +18,8 @@ const PlayerAttribute = (props) => {
     }
     return (
         <div>
-            {icon}
-            <p className="atributes-text">{props.attributeType}</p>
             <AttributeBadge className="badge" value={props.value}/>
+            <p className="atributes-text">{props.attributeType}</p>
         </div>
     )
 }

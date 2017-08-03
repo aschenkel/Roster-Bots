@@ -1,15 +1,20 @@
 .owner {
-  background-color: #1C0113;
+  background-color: #031634;
   flex-basis:20%;
   display: flex;
   justify-content: center;
+  -webkit-box-shadow: 3px 2px 50px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 2px 40px -4px rgba(0,0,0,0.75);
+box-shadow: 3px 2px 50px -4px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 10;
 }
 
 .owner-data{
-  margin: 7% 0;
+  margin: 24px 0;
   display: flex;
   flex-direction: column;
-  position: fixed
+  position: fixed;
 }
 
 .ownerPic{
@@ -17,7 +22,7 @@
     height: 200px;
     margin: 0 0 16px 0;
     border-radius: 50%;
-    border: 2px solid #6B0103;
+    border: 2px solid #EED8AE;
 }
 
 p{
