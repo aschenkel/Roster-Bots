@@ -1,60 +1,53 @@
-.card {
+.card{
+  position: relative;
+  height:180px;
+  margin: 0px 0px 16px 0px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.data {
   background-color:wheat;
   height:180px;
-  margin: 16px 0px 16px 0px;
   min-width: 400px;
   max-width: 400px;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   overflow: hidden;
 }
 
-.card:hover{
+.universe:hover{
   transform: scale3d(1.1,1.1,1.1);
   -ms-transform: scale3d(1.1,1.1,1.1);
   -webkit-transform: scale3d(1.1,1.1,1.1);
 }
 
-.atributes{
-  display: flex;
-  margin: 20px 0 0 12px 
+.name-container{
+  flex-basis: 20%
 }
-
-.speed-separators{
-  margin: 0px 0 20px 0
+.atributes{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 0 0 14px ;
 }
 
 p{
   font-size: 20px;
   white-space: nowrap;
   display: inline;
-
 }
 
-.values{
-  margin: 0 0 0 16px
+.player-score{
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  max-width: 100%;
 }
-
-p.score{
-  font-size: 100px;
-  float: right;
-  font-weight: bold;
-  margin: -10px 0 0 95px;
-	color: #EED8AE;
-  text-shadow: 0px 4px 0px  rgba(255,255,255,.3), 0px -2px 0px grey;
-}
-
-p.score-exception{
-  font-size: 100px;
-  float: right;
-  font-weight: bold;
-  margin: -10px 0 0 45px;
-	color: #EED8AE;
-  text-shadow: 0px 4px 0px  rgba(255,255,255,.3), 0px -2px 0px grey;
-}
-
 
 @media only screen and (max-width: 900px) {
     .card {

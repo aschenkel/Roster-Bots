@@ -6,6 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
 import  PlayerName  from '../src/Components/PlayerCard/PlayerName/PlayerName';
 import  PlayerAttribute  from '../src/Components/PlayerCard/PlayerAttribute/PlayerAttribute';
+import  AttributeBadge  from '../src/Components/PlayerCard/AttributeBadge/AttributeBadge';
 import  PlayerCard  from '../src/Components/PlayerCard/PlayerCard';
 import  Lineup  from '../src/Components/Lineup/Lineup';
 import  Squad  from '../src/Components/Squad/Squad';
@@ -18,6 +19,7 @@ var mockPlayer = createMockPlayer(99)
 var mockRoster = createMockRoster()
 var {starters, subs} = pickLineUp(mockRoster)
 var PlayerNameInfo = "Shows a player name"
+var AttributeBadgeInfo = "Shows an attribute value as a badge"
 var PlayerAttributeInfo = "Shows a player attribute with its proper icon"
 var PlayerCardInfo = "Shows a card displaying player name, speed, strenght and score"
 var StartersInfo = "Shows a list of starters"
@@ -29,11 +31,15 @@ storiesOf('PlayerName', module)
     .add('Regular',withInfo(PlayerCardInfo)(() => 
         <PlayerName name={mockPlayer.name}/>))
 
+storiesOf('AttributeBadge', module)
+    .add('Regular',withInfo(AttributeBadgeInfo)(() => 
+        <AttributeBadge value={mockPlayer.speed}/>))
+
 storiesOf('PlayerAttribute', module)
     .add('Speed',withInfo(PlayerAttributeInfo)(() => 
-        <PlayerAttribute attributeType="speed"/>))
+        <PlayerAttribute attributeType="speed" value={mockPlayer.speed}/>))
     .add('Strenght',withInfo(PlayerAttributeInfo)(() => 
-        <PlayerAttribute attributeType="strenght"/>))
+        <PlayerAttribute attributeType="strenght" value={mockPlayer.strenght}/>))
         
 storiesOf('PlayerCard', module)
     .add('Regular',withInfo(PlayerCardInfo)(() => 

@@ -2,37 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './PlayerCard.css';
 import PlayerName from './PlayerName/PlayerName'
-import PlayerAttribute from './PlayerAttribute/PlayerAttribute'
-import AttributeBadge from './AttributeBadge/AttributeBadge'
+import PlayerAttribute, {attributes} from './PlayerAttribute/PlayerAttribute'
+import Score from './Score/Score'
+//       
 
 const PlayerCard = (props) => {
     return (
       <div className="card">
-        <PlayerName name={props.player.name}/>
-        <div className="atributes">
-          <div className="titles">
-            <div className="speed-separators">
-              <PlayerAttribute attributeType= "speed"/>
-            </div>
-              <PlayerAttribute attributeType = "strenght"/>
+        <div className="data">
+          <div className="name-container">
+            <PlayerName name={props.player.name}/>
           </div>
-          <div className="values">
-            <div className="speed-separators">
-              <AttributeBadge speed value={props.player.speed}/>
-            </div>
-              <AttributeBadge value={props.player.strenght}/>
-            </div>
-          <div>
-            {props.player.score === 100 ?  
-              <p className="score-exception"> {props.player.score}</p> 
-              :
-              <p className="score"> {props.player.score}</p> 
-            }
+          <div className="atributes">
+                <PlayerAttribute attributeType= {attributes.speed} value={props.player.speed}/>
+                <PlayerAttribute attributeType = {attributes.strenght} value={props.player.strenght}/>
           </div>
+        </div>
+        <div className="player-score">
+         <Score score={props.player.score}/>
         </div>
       </div>
     );
 }
+
 
 PlayerCard.propTypes = {
   player: PropTypes.object.isRequired
