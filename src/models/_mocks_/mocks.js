@@ -12,7 +12,7 @@ export const createMockPlayer = (score) =>{
 }
 
 export const mockNameCreator = () => {
-    return 'AAAA-0000-AAAA-0000'
+    return '081813ad-c751-40e6-a12b-04f61968607b'
 }
 
 export const createMockRoster = () =>{
