@@ -4,6 +4,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
+import  PlayerName  from '../src/Components/PlayerCard/PlayerName/PlayerName';
+import  PlayerAttribute  from '../src/Components/PlayerCard/PlayerAttribute/PlayerAttribute';
 import  PlayerCard  from '../src/Components/PlayerCard/PlayerCard';
 import  Lineup  from '../src/Components/Lineup/Lineup';
 import  Squad  from '../src/Components/Squad/Squad';
@@ -15,12 +17,24 @@ import {pickLineUp} from '../src/models/Lineup/Lineup'
 var mockPlayer = createMockPlayer(99)
 var mockRoster = createMockRoster()
 var {starters, subs} = pickLineUp(mockRoster)
+var PlayerNameInfo = "Shows a player name"
+var PlayerAttributeInfo = "Shows a player attribute with its proper icon"
 var PlayerCardInfo = "Shows a card displaying player name, speed, strenght and score"
 var StartersInfo = "Shows a list of starters"
 var SubsInfo = "Shows a list of subs"
 var LineupInfo = "Shows a lineup containing both starters and subs"
 
 
+storiesOf('PlayerName', module)
+    .add('Regular',withInfo(PlayerCardInfo)(() => 
+        <PlayerName name={mockPlayer.name}/>))
+
+storiesOf('PlayerAttribute', module)
+    .add('Speed',withInfo(PlayerAttributeInfo)(() => 
+        <PlayerAttribute attributeType="speed"/>))
+    .add('Strenght',withInfo(PlayerAttributeInfo)(() => 
+        <PlayerAttribute attributeType="strenght"/>))
+        
 storiesOf('PlayerCard', module)
     .add('Regular',withInfo(PlayerCardInfo)(() => 
         <PlayerCard player={mockPlayer}/>))

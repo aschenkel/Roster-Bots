@@ -13,6 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy-storybook": "storybook-to-ghpages",
     "test": "jest",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@storybook/addon-info": "^3.2.0",
     "@storybook/react": "^3.2.3",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-jest": "^20.0.3",
     "jest": "^20.0.4",
     "regenerator-runtime": "^0.10.5"
@@ -30,5 +32,10 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
     }
+  },
+  "storybook-deployer": {
+    "gitUsername": "aschenkel",
+    "gitEmail": "axel.schenkelman@gmail.com",
+    "commitMessage": "Deploy Storybook"
   }
 }

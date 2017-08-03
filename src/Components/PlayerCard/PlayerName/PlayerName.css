@@ -1,0 +1,21 @@
+.content{
+  margin: 16px
+}
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #1C0113;
+    margin: -8px 0 0 0 
+}
+
+.name-tag{
+    font-size: 14px;
+    display: block;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+    color:gray
+}

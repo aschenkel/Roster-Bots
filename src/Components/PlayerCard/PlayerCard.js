@@ -1,28 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './PlayerCard.css';
-import {MdFitnessCenter,MdDirectionsRun} from 'react-icons/lib/md'
+import PlayerName from './PlayerName/PlayerName'
+import PlayerAttribute from './PlayerAttribute/PlayerAttribute'
+import AttributeBadge from './AttributeBadge/AttributeBadge'
 
 const PlayerCard = (props) => {
     return (
       <div className="card">
-        <div className="content">
-          <p className="name-tag">name</p>
-          <p className="name">{props.player.name}</p>
-        </div>
+        <PlayerName name={props.player.name}/>
         <div className="atributes">
           <div className="titles">
             <div className="speed-separators">
-              <MdDirectionsRun size={23} className="icons"/><p className="atributes-text">speed</p>
+              <PlayerAttribute attributeType= "speed"/>
             </div>
-              <MdFitnessCenter size={23} className="icons"/><p className="atributes-text">strenght</p>
+              <PlayerAttribute attributeType = "strenght"/>
           </div>
           <div className="values">
             <div className="speed-separators">
-              <p className="badge speedBadge">{props.player.speed}</p>
+              <AttributeBadge speed value={props.player.speed}/>
             </div>
-              <p className="badge">{props.player.strenght}</p>
-          </div>
+              <AttributeBadge value={props.player.strenght}/>
+            </div>
           <div>
             {props.player.score === 100 ?  
               <p className="score-exception"> {props.player.score}</p> 
