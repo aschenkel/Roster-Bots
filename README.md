@@ -31,7 +31,7 @@ You may use any sorting algorithm to define your 10 starter bots and 5 substitue
 >UI development environment for your React components.
 React Storybook runs outside of your app, so you can develop UI components in isolation without worrying about app specific dependencies and requirements. 
 
-It makes developing process easier, encourages you to write stateless components and it is a great tool to use for documentation.
+It makes developing process easier, encourages you to write stateless components and it is a great tool to use for documentation. Super handy when working as a team.
 
 **--> Check this app storybook at https://aschenkel.github.io/Roster-Bots/**
 *(To see a component info, usage and propTypes click on the "Show Info" button on the top right corner)*
