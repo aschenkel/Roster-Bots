@@ -30,8 +30,8 @@ export const attributes = {
 }
 
 PlayerAttribute.propTypes = {
-  attributeType: PropTypes.string.isRequired,
-  attributeValue: PropTypes.number.isRequired
+  attributeType: PropTypes.string,
+  attributeValue: PropTypes.number
 };
 
 export default PlayerAttribute;

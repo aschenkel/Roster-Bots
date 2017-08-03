@@ -9,7 +9,7 @@ const AttributeBadge = (props) => {
 }
 
 AttributeBadge.propTypes = {
-  value: PropTypes.number.isRequired
+  value: PropTypes.number
 };
 
 

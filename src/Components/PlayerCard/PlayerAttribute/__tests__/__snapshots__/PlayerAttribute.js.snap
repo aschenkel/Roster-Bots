@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a player´s attribute (speed) 1`] = `
+<div>
+  <p
+    className="badge"
+  />
+  <p
+    className="atributes-text"
+  >
+    speed
+  </p>
+</div>
+`;
+
+exports[`should render a player´s attribute (strenght) 1`] = `
+<div>
+  <p
+    className="badge"
+  />
+  <p
+    className="atributes-text"
+  >
+    strenght
+  </p>
+</div>
+`;

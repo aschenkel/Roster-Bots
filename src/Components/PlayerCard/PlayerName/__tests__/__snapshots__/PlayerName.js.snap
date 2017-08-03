@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a player´s name 1`] = `
+<div
+  className="content"
+>
+  <p
+    className="name-tag"
+  >
+    name
+  </p>
+  <p
+    className="name"
+  >
+    081813ad-c751-40e6-a12b-04f61968607b
+  </p>
+</div>
+`;
