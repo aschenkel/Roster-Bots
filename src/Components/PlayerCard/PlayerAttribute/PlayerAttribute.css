@@ -1,13 +1,8 @@
 .atributes-text{
-    color:gray;
+    color:darkgray; 
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 
 }
-.icons{
-  margin: 0px 8px 0 0;
-  color:gray
-}
-
 .badge{
   margin: 0 8px 0 3px
 }

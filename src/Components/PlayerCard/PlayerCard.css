@@ -1,3 +1,8 @@
+@import url("./PlayerName/PlayerName.css");
+@import url("./PlayerAttribute/PlayerAttribute.css");
+@import url("./AttributeBadge/AttributeBadge.css");
+
+
 .card{
   position: relative;
   height:180px;
@@ -22,11 +27,28 @@
 }
 
 .card:hover{
-  background-color: #1C0113;
+  background-color: royalblue;
   transform: scale3d(1.1,1.1,1.1);
   -ms-transform: scale3d(1.1,1.1,1.1);
   -webkit-transform: scale3d(1.1,1.1,1.1);
+   color: whitesmoke; 
 }
+
+.card:hover .name{
+   color: #F4D6BC; 
+}
+
+.card:hover .badge{
+   background-color: #F4D6BC;
+   color:royalblue
+}
+.card:hover .name-tag {
+   color: lightgray; 
+}
+.card:hover .atributes-text{
+   color: lightgray; 
+}
+
 
 .name-container{
   flex-basis: 20%
