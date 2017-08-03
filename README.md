@@ -24,7 +24,6 @@ example).
 You may use any sorting algorithm to define your 10 starter bots and 5 substitue bots.
 
 <br/>
-<br/>
 
 ## Good Practices ##
 
@@ -34,7 +33,7 @@ React Storybook runs outside of your app, so you can develop UI components in is
 
 It makes developing process easier, encourages you to write stateless components and it is a great tool to use for documentation.
 
-**Check this app storybook at https://aschenkel.github.io/Roster-Bots/**
+**--> Check this app storybook at https://aschenkel.github.io/Roster-Bots/**
 *(To see a component info, usage and propTypes click on the "Show Info" button on the top right corner)*
 
 ### Separate business logic from UI ###
