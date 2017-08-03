@@ -1,6 +1,6 @@
 import {pickLineUp} from './Lineup'
-import {numberOfStarters, numberOfPlayersPerTeam,maxScoreAllowed} from '../../config/rules'
-import {createMockPlayer} from '../Player/Player.test'
+import {numberOfStarters,maxScoreAllowed} from '../../config/rules'
+import {createMockPlayer,createMockRoster} from '../_mocks_/mocks'
 
 it('should pick starters correctly', () => {
     var mockRoster = createMockRoster()
@@ -10,11 +10,3 @@ it('should pick starters correctly', () => {
 })
 
 
-export const createMockRoster = () =>{
-    var mockPlayers = []
-    for (var i = 0; i < numberOfPlayersPerTeam; i++) {
-      var properScore = maxScoreAllowed - i;
-      mockPlayers.push(createMockPlayer(properScore))
-    }
-    return mockPlayers
-}

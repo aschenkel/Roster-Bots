@@ -1,5 +1,7 @@
 import {newPlayer, errorMessage} from './Player'
 import {maxScoreAllowed,minScoreAllowed} from '../../config/rules'
+import {createMockPlayer,mockNameCreator} from '../_mocks_/mocks'
+
 
 it('should create a new player correctly', () => {
     var halfScoreAllowed = maxScoreAllowed/2
@@ -21,16 +23,3 @@ it('should return error(string) due to score lower than allowed', () => {
     expect(expected).toEqual(actual)
 })
 
-export const createMockPlayer = (score) =>{
-    var halfScore = score/2
-    return {
-        name:mockNameCreator(),
-        speed: Math.round(halfScore),
-        strenght:Math.floor(halfScore),
-        score
-    }
-}
-
-const mockNameCreator = () => {
-    return 'AAAA-0000'
-}

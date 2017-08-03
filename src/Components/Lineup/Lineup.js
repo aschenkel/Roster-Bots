@@ -1,4 +1,5 @@
-import React, { Component, PropTypes} from 'react';
+import React, { Component} from 'react';
+import PropTypes from 'prop-types';
 import Squad from '../Squad/Squad'
 import {pickLineUp} from '../../models/Lineup/Lineup'
 
@@ -20,5 +21,9 @@ class Lineup extends Component {
 Lineup.propTypes = {
   roster: PropTypes.array.isRequired
 };
+
+Lineup.defaultProps = {
+  displayName: 'Lineup'
+}
 
 export default Lineup;

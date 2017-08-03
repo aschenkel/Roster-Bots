@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './PlayerCard.css';
 import {MdFitnessCenter,MdDirectionsRun} from 'react-icons/lib/md'
 
@@ -37,5 +38,9 @@ const PlayerCard = (props) => {
 PlayerCard.propTypes = {
   player: PropTypes.object.isRequired
 };
+
+PlayerCard.defaultProps = {
+  displayName: 'PlayerCard'
+}
 
 export default PlayerCard;

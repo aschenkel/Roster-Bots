@@ -21,4 +21,8 @@ const Owner = () =>
       </div>
     );
 
+Owner.defaultProps = {
+  displayName: 'Owner'
+}
+
 export default Owner;

@@ -13,4 +13,8 @@ class Roster extends Component {
   }
 }
 
+Roster.defaultProps = {
+  displayName: 'Roster'
+}
+
 export default Roster;

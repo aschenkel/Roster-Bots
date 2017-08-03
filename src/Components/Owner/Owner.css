@@ -36,8 +36,8 @@ p.owner-name{
 a:hover {
     color: wheat;
 }
-a:visited {
-    color: wheat;
+a{
+    color: whitesmoke
 }
 .github-icon{
     color: whitesmoke;

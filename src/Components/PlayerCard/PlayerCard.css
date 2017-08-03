@@ -4,7 +4,6 @@
   margin: 16px 0px 16px 0px;
   min-width: 400px;
   max-width: 400px;
-  width: 90%;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
   display: inline-block;
   backface-visibility: hidden;
@@ -97,7 +96,7 @@ p.score-exception{
 }
 
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 900px) {
     .card {
         width: 60%;
         margin: 16px 25%;

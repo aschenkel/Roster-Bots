@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import PlayerCard from '../PlayerCard/PlayerCard'
 import './Squad.css';
 
@@ -9,7 +10,7 @@ const Squad = (props) => {
           <div className="Squad-Content">
             {
               props.players.map(player =>{
-                return <PlayerCard player={player}/>
+                return <PlayerCard player={player} key={player.score}/>
               })
             }
           </div>
@@ -18,8 +19,12 @@ const Squad = (props) => {
 }
 
 Squad.propTypes = {
-  players: PropTypes.array.isRequired
+  players: PropTypes.array.isRequired,
+  starter: PropTypes.bool
 };
 
+Squad.defaultProps = {
+  displayName: 'Squad'
+}
 
 export default Squad;
