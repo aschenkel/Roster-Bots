@@ -1,5 +1,5 @@
 import {newPlayer} from '../Player/Player'
-import {maxScoreAllowed, numberOfPlayersPerTeam} from '../../config/rules'
+import {maxScoreAllowed, numberOfPlayersPerTeam} from '../../settings/rules'
 
 export const newRoster = () => {
     var players = []

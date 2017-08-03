@@ -3,7 +3,7 @@ import Squad from '../Squad';
 import renderer from 'react-test-renderer';
 import {createMockRoster} from '../../../models/_mocks_/mocks'
 import {pickLineUp} from '../../../models/Lineup/Lineup'
-import {numberOfStarters, numberOfPlayersPerTeam} from '../../../config/rules'
+import {numberOfStarters, numberOfPlayersPerTeam} from '../../../settings/rules'
 
 
 var mockRoster = createMockRoster()

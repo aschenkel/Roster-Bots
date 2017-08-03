@@ -1,4 +1,4 @@
-import {maxScoreAllowed,minScoreAllowed} from '../../config/rules'
+import {maxScoreAllowed,minScoreAllowed} from '../../settings/rules'
 const uuidv4 = require('uuid/v4');
 
 export const newPlayer = (score,nameCreator = uuidv4) => {

@@ -1,4 +1,4 @@
-import {numberOfPlayersPerTeam,maxScoreAllowed, numberOfStarters} from '../../config/rules'
+import {numberOfPlayersPerTeam,maxScoreAllowed, numberOfStarters} from '../../settings/rules'
 
 
 export const createMockPlayer = (score) =>{

@@ -1,5 +1,5 @@
 import {pickLineUp} from './Lineup'
-import {numberOfStarters,maxScoreAllowed} from '../../config/rules'
+import {numberOfStarters,maxScoreAllowed} from '../../settings/rules'
 import {createMockPlayer,createMockRoster} from '../_mocks_/mocks'
 
 it('should pick starters correctly', () => {

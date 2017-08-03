@@ -1,7 +1,7 @@
 import React from 'react';
 import './Owner.css';
 import {GoMarkGithub} from 'react-icons/lib/go'
-import {ownerName,ownerLastName,ownerMail,ownerGithub} from '../../config/ownerData'
+import {ownerName,ownerLastName,ownerMail,ownerGithub} from '../../settings/ownerData'
 const Owner = () => 
      (
       <div className="owner">
