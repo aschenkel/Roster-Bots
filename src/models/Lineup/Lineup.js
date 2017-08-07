@@ -1,4 +1,4 @@
-import {numberOfStarters, numberOfPlayersPerTeam} from '../../config/rules'
+import {numberOfStarters, numberOfPlayersPerTeam} from '../../settings/rules'
 
 export const pickLineUp = roster =>  {
     var rosterOrderBySpeed = roster.sort(compareBySpeed);

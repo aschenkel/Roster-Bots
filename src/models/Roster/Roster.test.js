@@ -1,5 +1,5 @@
 import {newRoster} from './Roster'
-import {numberOfPlayersPerTeam} from '../../config/rules'
+import {numberOfPlayersPerTeam} from '../../settings/rules'
 
 it('should create a new roster with the proper amount of players', () => {
     var expected = numberOfPlayersPerTeam

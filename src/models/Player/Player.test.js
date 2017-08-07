@@ -1,5 +1,5 @@
 import {newPlayer, errorMessage} from './Player'
-import {maxScoreAllowed,minScoreAllowed} from '../../config/rules'
+import {maxScoreAllowed,minScoreAllowed} from '../../settings/rules'
 import {createMockPlayer,mockNameCreator} from '../_mocks_/mocks'
 
 
