@@ -3,7 +3,7 @@
     -moz-column-count: 2;
     column-count: 2;
     margin: 0 12%;
-    column-gap: 20%
+    column-gap: 80px
 }
 
 h1{
@@ -22,5 +22,16 @@ h1{
 
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+    .Squad-Content{
+        -webkit-margin-start: auto;
+         -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
 
 
