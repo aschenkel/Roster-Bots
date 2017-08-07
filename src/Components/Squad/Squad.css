@@ -4,7 +4,8 @@
     column-count: 2;
     margin: 0 12%;
     column-gap: 80px;
-    transform: translateZ(0)
+    transform: translateZ(0);
+    -webkit-column-break-inside: avoid;
 }
 
 h1{
