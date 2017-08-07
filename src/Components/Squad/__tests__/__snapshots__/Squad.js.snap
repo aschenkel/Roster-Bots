@@ -57,7 +57,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -249,7 +249,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -313,7 +313,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -377,7 +377,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -441,7 +441,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -505,7 +505,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -569,7 +569,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -633,7 +633,7 @@ exports[`should render starter squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -710,7 +710,7 @@ exports[`should render subs squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -774,7 +774,7 @@ exports[`should render subs squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -838,7 +838,7 @@ exports[`should render subs squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -902,7 +902,7 @@ exports[`should render subs squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>
@@ -966,7 +966,7 @@ exports[`should render subs squad 1`] = `
             <p
               className="atributes-text"
             >
-              strenght
+              strength
             </p>
           </div>
         </div>

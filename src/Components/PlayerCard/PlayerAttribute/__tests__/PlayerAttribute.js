@@ -9,9 +9,9 @@ it('should render a player´s attribute (speed)', () => {
     expect(tree).toMatchSnapshot();
 });
 
-it('should render a player´s attribute (strenght)', () => {
+it('should render a player´s attribute (strength)', () => {
     const tree = renderer.create(
-        <PlayerAttribute attributeType={attributes.strenght} attributeValue={44}/>
+        <PlayerAttribute attributeType={attributes.strength} attributeValue={44}/>
         ).toJSON();
     expect(tree).toMatchSnapshot();
 });

@@ -10,7 +10,7 @@ const PlayerAttribute = (props) => {
         case attributes.speed:
                 icon = <MdDirectionsRun size={23} className="icons"/>
             break;
-        case attributes.strenght:
+        case attributes.strength:
                 icon = <MdFitnessCenter size={23} className="icons"/>
             break;
         default:
@@ -26,7 +26,7 @@ const PlayerAttribute = (props) => {
 
 export const attributes = {
     speed : "speed",
-    strenght : "strenght",
+    strength : "strength",
 }
 
 PlayerAttribute.propTypes = {

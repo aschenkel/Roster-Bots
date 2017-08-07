@@ -49,7 +49,7 @@ exports[`should render a player card 1`] = `
         <p
           className="atributes-text"
         >
-          strenght
+          strength
         </p>
       </div>
     </div>

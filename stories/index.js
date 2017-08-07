@@ -21,7 +21,7 @@ var {starters, subs} = pickLineUp(mockRoster)
 var PlayerNameInfo = "Shows a player name"
 var AttributeBadgeInfo = "Shows an attribute value as a badge"
 var PlayerAttributeInfo = "Shows a player attribute and its value"
-var PlayerCardInfo = "Shows a card displaying player name, speed, strenght and score"
+var PlayerCardInfo = "Shows a card displaying player name, speed, strength and score"
 var StartersInfo = "Shows a list of starters"
 var SubsInfo = "Shows a list of subs"
 var LineupInfo = "Shows a lineup containing both starters and subs"
@@ -38,8 +38,8 @@ storiesOf('AttributeBadge', module)
 storiesOf('PlayerAttribute', module)
     .add('Speed',withInfo(PlayerAttributeInfo)(() => 
         <PlayerAttribute attributeType="speed" value={mockPlayer.speed}/>))
-    .add('Strenght',withInfo(PlayerAttributeInfo)(() => 
-        <PlayerAttribute attributeType="strenght" value={mockPlayer.strenght}/>))
+    .add('strength',withInfo(PlayerAttributeInfo)(() => 
+        <PlayerAttribute attributeType="strength" value={mockPlayer.strength}/>))
         
 storiesOf('PlayerCard', module)
     .add('Regular',withInfo(PlayerCardInfo)(() => 

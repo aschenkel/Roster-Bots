@@ -13,7 +13,7 @@ exports[`should render a player´s attribute (speed) 1`] = `
 </div>
 `;
 
-exports[`should render a player´s attribute (strenght) 1`] = `
+exports[`should render a player´s attribute (strength) 1`] = `
 <div>
   <p
     className="badge"
@@ -21,7 +21,7 @@ exports[`should render a player´s attribute (strenght) 1`] = `
   <p
     className="atributes-text"
   >
-    strenght
+    strength
   </p>
 </div>
 `;

@@ -6,13 +6,13 @@ export const createMockPlayer = (score) =>{
     return {
         name:mockNameCreator(),
         speed: Math.round(halfScore),
-        strenght:Math.floor(halfScore),
+        strength:Math.floor(halfScore),
         score
     }
 }
 
 export const mockNameCreator = () => {
-    return '081813ad-c751-40e6-a12b-04f61968607b'
+    return '081813adc75140e6a12b04f61968607b'
 }
 
 export const createMockRoster = () =>{

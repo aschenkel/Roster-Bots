@@ -15,7 +15,7 @@ const PlayerCard = (props) => {
           </div>
           <div className="atributes">
                 <PlayerAttribute attributeType= {attributes.speed} value={props.player.speed}/>
-                <PlayerAttribute attributeType = {attributes.strenght} value={props.player.strenght}/>
+                <PlayerAttribute attributeType = {attributes.strength} value={props.player.strength}/>
           </div>
         </div>
         <div className="player-score">
