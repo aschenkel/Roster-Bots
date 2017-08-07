@@ -13,14 +13,12 @@
   background-color:#F8E4CC;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
   transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
   -webkit-margin-top-collapse:discard;
-    -webkit-margin-start-collapse:discard;
+  -webkit-margin-start-collapse:discard;
   -webkit-margin-end-collapse:discard;
   -webkit-margin-bottom-collapse:discard;
-  transform-style: preserve-3d;
   overflow: visible;
-    position: relative;
-
 }
 
 .data {
@@ -30,11 +28,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
   overflow: visible;
   transform: translateZ(0);
-  transform-style: preserve-3d;
    -webkit-margin-top-collapse:discard;
     -webkit-margin-start-collapse:discard;
   -webkit-margin-end-collapse:discard;
