@@ -12,7 +12,8 @@
   display: inline-block;
   background-color:#F8E4CC;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-  transform: translateZ(0)
+  transform: translateZ(0);
+  -webkit-margin-top-collapse:discard
 }
 
 .data {
@@ -24,7 +25,8 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   overflow: hidden;
-  transform: translateZ(0)
+  transform: translateZ(0);
+  -webkit-margin-top-collapse:discard
 }
 
 .card:hover{
@@ -33,7 +35,6 @@
   -ms-transform: scale3d(1.1,1.1,1.1);
   -webkit-transform: scale3d(1.1,1.1,1.1);
    color: whitesmoke;
-   transform: translateZ(0)
 }
 
 .card:hover .name{
