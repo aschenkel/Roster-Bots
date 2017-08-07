@@ -13,7 +13,11 @@
   background-color:#F8E4CC;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
   transform: translateZ(0);
-  -webkit-margin-top-collapse:discard
+  -webkit-margin-top-collapse:discard;
+    -webkit-margin-start-collapse:discard;
+  -webkit-margin-end-collapse:discard;
+  -webkit-margin-bottom-collapse:discard;
+  overflow: visible;
 }
 
 .data {
@@ -24,9 +28,12 @@
   flex-direction: column;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  overflow: hidden;
+  overflow: visible;
   transform: translateZ(0);
-  -webkit-margin-top-collapse:discard
+   -webkit-margin-top-collapse:discard;
+    -webkit-margin-start-collapse:discard;
+  -webkit-margin-end-collapse:discard;
+  -webkit-margin-bottom-collapse:discard;
 }
 
 .card:hover{

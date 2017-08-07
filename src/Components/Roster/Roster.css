@@ -8,8 +8,7 @@
 	background-position: 1px 1px, 0px 0px, center center;
 	top: 0;
   flex-basis:80%;
-	transform: translateZ(0);
-  -webkit-margin-top-collapse:discard
+	
 }
 
 @media only screen and (max-width: 1180px) {
