@@ -17,7 +17,10 @@
     -webkit-margin-start-collapse:discard;
   -webkit-margin-end-collapse:discard;
   -webkit-margin-bottom-collapse:discard;
+  transform-style: preserve-3d;
   overflow: visible;
+    position: relative;
+
 }
 
 .data {
@@ -26,10 +29,12 @@
   max-width: 350px;
   display: flex;
   flex-direction: column;
+  position: relative;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   overflow: visible;
   transform: translateZ(0);
+  transform-style: preserve-3d;
    -webkit-margin-top-collapse:discard;
     -webkit-margin-start-collapse:discard;
   -webkit-margin-end-collapse:discard;
