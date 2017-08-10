@@ -21,7 +21,7 @@ exports[`should render a player card 1`] = `
         <p
           className="name"
         >
-          aabbbcccdddeeeff1223444467777889
+          ABBCCDDDFFF011122223446667778999
         </p>
       </div>
     </div>

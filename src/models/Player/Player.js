@@ -29,7 +29,7 @@ const nameCorrector = uncorrectName =>{
     var char = uncorrectName.charAt(i);
     if(char !== '-'){
       if(isNaN(char)){
-        letters.push(char)
+        letters.push(char.toUpperCase())
       }else{
         numbers.push(char)
       }

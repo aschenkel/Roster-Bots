@@ -12,10 +12,10 @@ export const createMockPlayer = (score) =>{
 }
 
 export const mockNameCreator = () => {
-    return 'aabbbcccdddeeeff1223444467777889'
+    return 'ABBCCDDDFFF011122223446667778999'
 }
 export const uuidMockNameCreator = () =>{
-    return 'feef1bbc24-4d4ab67-7778-89a-cd23de4c'
+    return '23C46012-2FBC7-42DF867-AB9D611-D99F7'
 }
 
 export const createMockRoster = () =>{
