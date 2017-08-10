@@ -12,7 +12,7 @@ exports[`should render a player´s name 1`] = `
   <p
     className="name"
   >
-    081813adc75140e6a12b04f61968607b
+    aabbbcccdddeeeff1223444467777889
   </p>
 </div>
 `;

@@ -1,12 +1,12 @@
 import {newPlayer, errorMessage} from './Player'
 import {maxScoreAllowed,minScoreAllowed} from '../../settings/rules'
-import {createMockPlayer,mockNameCreator} from '../_mocks_/mocks'
+import {createMockPlayer,mockNameCreator,uuidMockNameCreator} from '../_mocks_/mocks'
 
 
 it('should create a new player correctly', () => {
     var halfScoreAllowed = maxScoreAllowed/2
     var expected= createMockPlayer(maxScoreAllowed)
-    var actual = newPlayer(maxScoreAllowed, mockNameCreator)
+    var actual = newPlayer(maxScoreAllowed, uuidMockNameCreator)
     expect(expected).toEqual(actual)
 })
 

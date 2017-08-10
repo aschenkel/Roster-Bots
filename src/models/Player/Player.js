@@ -5,7 +5,7 @@ export const newPlayer = (score,nameCreator = uuidv4) => {
   if(isScoreValid(score)){ 
     var halfScore = score/2
     return {
-      name: removeDashes(nameCreator()),
+      name: nameCorrector(nameCreator()),
       speed: Math.round(halfScore),
       strength: Math.floor(halfScore),
       score
@@ -20,8 +20,27 @@ const isScoreValid = score => {
     return score >= minScoreAllowed && score <= maxScoreAllowed ? true : false
 }
 
-const removeDashes = dashedName => {
-  let undashedName = dashedName.replace(/-/g, '');
-  return undashedName
+
+
+const nameCorrector = uncorrectName =>{
+  var letters =[]
+  var numbers = []
+  for (var i = 0; i < uncorrectName.length; i++) {
+    var char = uncorrectName.charAt(i);
+    if(char !== '-'){
+      if(isNaN(char)){
+        letters.push(char)
+      }else{
+        numbers.push(char)
+      }
+    }
+  } 
+  letters.sort()
+  numbers.sort()
+  return letters.concat(numbers).join("");
+}
+
+const orderAndJoin = array => {
+  array.sort().join("");
 }
 export const errorMessage = "Error, score not allowed"

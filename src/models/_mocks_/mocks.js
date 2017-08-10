@@ -4,7 +4,7 @@ import {numberOfPlayersPerTeam,maxScoreAllowed, numberOfStarters} from '../../se
 export const createMockPlayer = (score) =>{
     var halfScore = score/2
     return {
-        name:mockNameCreator(),
+        name: mockNameCreator(),
         speed: Math.round(halfScore),
         strength:Math.floor(halfScore),
         score
@@ -12,7 +12,10 @@ export const createMockPlayer = (score) =>{
 }
 
 export const mockNameCreator = () => {
-    return '081813adc75140e6a12b04f61968607b'
+    return 'aabbbcccdddeeeff1223444467777889'
+}
+export const uuidMockNameCreator = () =>{
+    return 'feef1bbc24-4d4ab67-7778-89a-cd23de4c'
 }
 
 export const createMockRoster = () =>{
