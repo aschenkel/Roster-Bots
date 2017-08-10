@@ -5,17 +5,6 @@ import {MdFitnessCenter,MdDirectionsRun} from 'react-icons/lib/md'
 import AttributeBadge from '../AttributeBadge/AttributeBadge'
 
 const PlayerAttribute = (props) => {
-    let icon
-    switch (props.attributeType) {
-        case attributes.speed:
-                icon = <MdDirectionsRun size={23} className="icons"/>
-            break;
-        case attributes.strength:
-                icon = <MdFitnessCenter size={23} className="icons"/>
-            break;
-        default:
-            break; 
-    }
     return (
         <div>
             <AttributeBadge className="badge" value={props.value}/>

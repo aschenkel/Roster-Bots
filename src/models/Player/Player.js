@@ -40,7 +40,4 @@ const nameCorrector = uncorrectName =>{
   return letters.concat(numbers).join("");
 }
 
-const orderAndJoin = array => {
-  array.sort().join("");
-}
 export const errorMessage = "Error, score not allowed"
